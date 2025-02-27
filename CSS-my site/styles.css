@@ -57,7 +57,7 @@ text-align: right;
     margin: 3.7vh auto 0 16vh;
 }
 /*-----------------------sec-1---------------------------------*/
-.sec-1{
+.HOME{
     width: 100vw;
     height: 100vh;
     
@@ -89,13 +89,13 @@ background-size: cover;
 .txt1{
    font-size: 5rem;
    margin: 0vh auto 2vh;
-    color: rgb(5, 5, 5);
+    color: white;
     
 }
 .txt2{
     font-size: 3rem;
     margin: 3vh auto 0;
-    color:rgb(5, 5, 5);
+    color:white;
 }
 /*--------------------sec-2-----------------------*/
 .sec-2{
@@ -238,9 +238,12 @@ padding-top: 30vh;
     color: white;
     height: 50vh;
     width: 100vw;
-    margin: 17vh auto 5vh;
+    margin: 10vh auto 5vh;
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-    font-size: 6vh;
+    font-size: 6.5vh;
+}
+.contact-me{
+    margin-right: 3vw;
 }
 .contact-img{
     height: 100vh;
@@ -249,8 +252,114 @@ padding-top: 30vh;
 .form-box{
     width: 100vw;
     height: fit-content;
+    position: absolute;
+    margin:40vh auto 5vh;
+
 }
 .main-box{
     display: flex;
     flex-direction: row;
 }
+.large-box{
+height: fit-content;
+width: 50vw;
+margin-left: 9vw;
+
+}
+.contact-box{
+    height: 10vh;
+    width: 39vw;
+    margin-bottom: 3vh;
+    margin-right:0;
+    
+}
+.input{
+    height: 10vh;
+    width: 33vw;
+    border-radius: 1vh;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-size: 3.9vh;
+    font-weight: 400;
+    border: 0.8px solid white;
+    padding-left: 1.3vw;
+
+}
+.larger-box{
+    height: fit-content;
+    width: 50vw;
+    margin-right:15vw;
+}
+.txtarea{
+    height: 40vh;
+    width: 40vw;
+    border-radius: 1vh;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-size: 3.9vh;
+    font-weight: 400;
+    border: 0.8px solid white;
+    padding-left: 1.3vw;
+    padding-bottom: 10px;
+}
+.button{
+    position: absolute;
+    margin: 47vh auto 10vh 40vw;
+}
+.btn{
+    height: 10vh;
+    width: 17vw;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-size: 2vh;
+    font-weight: 900;
+    border-radius: 10px;
+    background-color:rgb(245, 211, 22);
+    color: white;
+    border-color: gold;
+    border: 1px;
+}
+.btn:hover{
+    background-color: white;
+    color: gold;
+}
+/*------------------------footer-----------------*/
+footer {
+    height: 10%;
+ 
+ }
+ 
+ .footer-container {
+    width: 100%;
+ 
+ }
+ .foot-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+ }
+ .bottom{
+    position: absolute;
+    left: 8vw;
+ }
+
+ .copyright {
+    font-size: 2.5vh;
+    text-transform: none;
+    color: #b7babd;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+   }
+
+.footer-ul{
+    list-style-type: none;
+}
+.links{
+    display: inline-block;
+}
+.footer-img {
+ height: 3vw;
+ width: 3vw;
+ margin: 2vh;
+}
+
+
+
+
