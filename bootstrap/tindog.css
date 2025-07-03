@@ -62,7 +62,12 @@ color: white;
     color: #8f8f8f;
     margin: 0 0 2rem;
 }
-.fa-solid {
+.icon {
     font-size: 3.7rem;
     margin: 0 0 1rem;
+    color: #ef8172
 }
+.icon:hover {
+color: #ff4c68;
+}
+    
