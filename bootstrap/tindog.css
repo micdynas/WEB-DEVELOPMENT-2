@@ -77,7 +77,6 @@ color: #ff4c68;
 /* testimonial section */
 
 #testimonials{
-    padding: 7% 15%;
     text-align: center;
     background-color: #ff4c68;
     color:#fff;
@@ -98,6 +97,9 @@ color: #ff4c68;
 
 }
 
+.carousel-item{
+    padding: 7% 15%;
+}
 /* press */
 
 #press{
