@@ -41,7 +41,9 @@ color: white;
     width: 60%;
     transform:rotate(25deg);
 }
-/* second part */
+
+
+/* features section */
 
 
 .col-lg-4{
@@ -71,3 +73,39 @@ color: white;
 color: #ff4c68;
 }
     
+
+/* testimonial section */
+
+#testimonials{
+    padding: 7% 15%;
+    text-align: center;
+    background-color: #ff4c68;
+    color:#fff;
+
+}
+.testimonial-text{
+    font-family: "Montserrat";
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight: bold;
+
+}
+
+.testimonial-image{
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+
+}
+
+/* press */
+
+#press{
+    background-color:#ff4c68;
+    text-align: center;
+    padding-bottom: 3%;
+}
+.press-logo{
+    width: 15%;
+    margin: 20px 20px 50px;
+}
