@@ -143,3 +143,20 @@ color: #ff4c68;
     font-weight: 800;
     margin: 1rem 0;
 }
+
+/* media-query */
+
+@media(max-width:1020px){
+    
+    #title{
+        text-align: center;
+    }
+    
+    .title-image{
+        position: static;
+        width: 25vw;
+        transform: rotate(0);
+       
+
+    }
+}
