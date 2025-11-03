@@ -1,0 +1,45 @@
+body{
+    text-align: center;
+    background-color:black;
+
+}
+.header{
+    font-family: fantasy;
+    font-size: 4rem;
+    color: bisque;
+    text-shadow: 4px 0 rgb(245, 154, 154);
+}
+.green{
+    width: 160px;
+    height: 160px;
+    background-color: green;
+    margin: 1.8rem;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+.red{
+     width: 160px;
+    height: 160px;
+    background-color: red;
+    margin: 1.8rem;
+    border-radius: 15px;
+    border: 1px solid black;
+   
+}
+.yellow{
+ width: 160px;
+    height: 160px;
+    background-color:yellow;
+    margin: 1.8rem;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+.blue{
+     width: 160px;
+    height: 160px;
+    background-color: blue;
+    margin: 1.8rem;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+

@@ -1,0 +1,39 @@
+body{
+    background-color:rgb(44, 41, 41);
+}
+h1{
+    font-size: 6rem;
+    color: aquamarine;
+    font-family: cursive;
+}
+h2{
+    font-size: 1.5rem;
+    color: aquamarine;
+    padding-bottom: 1rem;
+    font-family: cursive;
+}
+.page{
+    text-align: center;
+    
+   
+}
+.second{
+  position: relative;
+  margin: 2rem 0 0;
+  
+}
+.p1{
+   
+display: inline-block;
+margin:0 0.3rem;
+padding: 0 1rem ;
+}
+.p2{
+margin: 0 0.3rem;
+padding: 0 1rem;
+display: inline-block;
+}
+.img{
+    height: 11rem;
+    width: 11rem;
+}
