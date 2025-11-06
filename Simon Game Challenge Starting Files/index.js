@@ -1,49 +1,99 @@
-// var buttonColors = ["red", "blue", "green", "yellow" ];
-// var gamePattern = [];
-
-
-// function nextSequence() {
-//     var randomNumber = Math.floor(Math.random() * 3) + 1;
-//     var randomChosenColor = buttonColors[randomNumber];
-//     gamePattern.push(randomChosenColor);
-    
-//     $(document).on( "click", function(event){
-//         $("#blue").animate({opacity:0.5}, 500, function(){
-//             $(event).animate({opactiy:1}, 500);
-//         });
-//     });
-// }
-
 var buttonColors = ["red", "blue", "green", "yellow" ];
-var randomNumber = Math.floor(Math.random() * 3) + 1;
+var gamePattern = [];
+var userClickedPattern = [];
+
+
+function nextSequence() {
+
+    var randomNumber = Math.floor(Math.random() * 3) + 1;
     var randomChosenColor = buttonColors[randomNumber];
+    gamePattern.push(randomChosenColor);
+     console.log("nextSequence() called!");
 
-    
+     level++;
 
-    $(document).ready( function(){
-        $("#" + randomChosenColor).on("click", function(){
-            $button = $(this);
 
-            button.animate({ opacity: 0.2 }, 100) 
+
+
+
+    $(".btn").on("click", function(){
+
+            $("#" + randomChosenColor).animate({ opacity: 0.2 }, 100) 
            .animate({ opacity: 1 }, 100)
            .animate({ opacity: 0.2 }, 100)
            .animate({ opacity: 1 }, 100); 
-        })
+        
+     
+         });
+}
 
-    });
-//     $(document).ready(function() {
-//   $("#myButton").on("click", function() {
-//     var $button = $(this);
+nextSequence();
+        
 
-//     // Animate opacity to create a flash effect
-//     $button.animate({ opacity: 0.2 }, 100) // Fade out quickly
-//            .animate({ opacity: 1 }, 100)  // Fade back in quickly
-//            .animate({ opacity: 0.2 }, 100) // Fade out again
-//            .animate({ opacity: 1 }, 100); // Fade back in
+$(".btn").on("click", function () {
+          var userChosenColor = this.id ;
+          userClickedPattern.push(userChosenColor);
+          playSound(userChosenColor);
+         
+         })
+         
+         
+         
+         function playSound(userChosenColor) {
+                  
+          switch (userChosenColor) {
+          case "blue":
+           var green1 = new Audio("sounds/blue.mp3");
+           green1.play();
+            break;
+            case "green":
+           var blue1 = new Audio("sounds/green.mp3");
+           blue1.play();
+            break;
+            case "red":
+           var red1 = new Audio("sounds/red.mp3");
+           red1.play();
+            break;
+            case "yellow":
+           var yellow1 = new Audio("sounds/yellow.mp3");
+           yellow1.play();
+            break;
+        
+          default: 
+            break;
+        }
 
-    // Alternatively, animate background color for a flash effect
-    // $button.animate({ backgroundColor: "#ff0000" }, 100) // Change to red
-    //        .animate({ backgroundColor: "#ffffff" }, 100) // Change back to white
-    //        .animate({ backgroundColor: "#ff0000" }, 100)
-    //        .animate({ backgroundColor: "#ffffff" }, 100);
- 
+         }
+         
+         function animatePress() {
+          
+        $(".btn").on("click", function () {
+
+
+          $(this).addClass("pressed");
+
+          setTimeout(function() {
+            $(".btn").removeClass("pressed");
+          }, 100);
+          })
+         }
+animatePress();
+
+var gameStarted = false;
+      
+$(document).on("keyDown", function () {
+  if (!gameStarted) {
+    nextSequence();
+    gameStarted = true;
+  }
+})
+
+var level = 0
+
+if(!gameStarted === true){
+  $("#level-title").innerHTML = "Level" + level;
+
+}
+
+
+
