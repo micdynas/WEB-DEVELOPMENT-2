@@ -88,12 +88,12 @@ $(document).on("keyDown", function () {
   }
 })
 
-var level = 0
+var level = 0;
 
-if(!gameStarted === true){
-  $("#level-title").innerHTML = "Level" + level;
+if(gameStarted = true){
+  $("#level-title").text("Level  " + level);
 
 }
-
+level++;
 
 
