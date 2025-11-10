@@ -4,19 +4,18 @@ var userClickedPattern = [];
 
 
 function nextSequence() {
+   
+level++;
+$("#level-title").text("Level " + level);
+
+
 
     var randomNumber = Math.floor(Math.random() * 3) + 1;
     var randomChosenColor = buttonColors[randomNumber];
     gamePattern.push(randomChosenColor);
      console.log("nextSequence() called!");
 
-     level++;
-
-
-
-
-
-    $(".btn").on("click", function(){
+ $(".btn").on("click", function(){
 
             $("#" + randomChosenColor).animate({ opacity: 0.2 }, 100) 
            .animate({ opacity: 1 }, 100)
@@ -25,10 +24,31 @@ function nextSequence() {
         
      
          });
+
+
+
+
+
+
+
 }
 
-nextSequence();
+var level = 0;
+var gameStarted = false;
+      
+$(document).on("keyDown", function() {
+  if (!gameStarted) {
+     $("#level-title").text("Level " + level);
+     nextSequence();
+    gameStarted = true;
+  }
+});
         
+
+
+
+
+
 
 $(".btn").on("click", function () {
           var userChosenColor = this.id ;
@@ -79,21 +99,7 @@ $(".btn").on("click", function () {
          }
 animatePress();
 
-var gameStarted = false;
-      
-$(document).on("keyDown", function () {
-  if (!gameStarted) {
-    nextSequence();
-    gameStarted = true;
-  }
-})
 
-var level = 0;
 
-if(gameStarted = true){
-  $("#level-title").text("Level  " + level);
-
-}
-level++;
 
 
