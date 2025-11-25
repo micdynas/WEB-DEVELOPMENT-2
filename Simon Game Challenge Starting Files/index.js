@@ -13,7 +13,7 @@ function nextSequence() {
            .animate({ opacity: 0.2 }, 100)
            .animate({ opacity: 1 }, 100); 
         
- userClickedPattern = [];
+ userClickedPattern = []; // Reset user clicks for the new level
 $("#level-title").text("Level " + level);
  level++;
 }
@@ -54,6 +54,12 @@ $(".btn").on("click", function () {
         }
 
          }
+  //        function playSound(name) {
+  // // Optimization: You don't need a switch statement!
+  // // Just use the filename variable.
+  // var audio = new Audio("sounds/" + name + ".mp3");
+  // audio.play();
+// }
          
          // to animate the button
          function animatePress() {
